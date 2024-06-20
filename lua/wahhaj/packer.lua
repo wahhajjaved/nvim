@@ -18,4 +18,8 @@ return require('packer').startup(function(use)
 		  vim.cmd("colorscheme kanagawa")
 	  end
   }
+
+   use{ 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}}
+
+   use "mbbill/undotree"
 end)
